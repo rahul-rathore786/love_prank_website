@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Love Prank</title>
+  </head>
+  <body>
+    <div class="formdiv">
+      <form id="nameForm" method="post" action="/" onsubmit="openFullscreen()">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Enter your name"
+          name="name"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="love-box" id="loveBox">
+      <p class="love-text" id="loveBoxp">Do You Love ❤️ Me</p>
+      <button class="btn" id="yesBtn" onclick="LoveMessage()">YES</button>
+      <button
+        class="btn"
+        id="noBtn"
+        onmouseover="moveNoButton()"
+        onclick="moveNoButton()"
+      >
+        NO
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html> -->
+
+<!-- // hide the love-box and show the formdiv -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Love Prank</title>
+  </head>
+  <body>
+    <div class="formdiv">
+      <form id="nameForm" method="post" action="/" onsubmit="openFullscreen()">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Enter your name"
+          name="name"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="love-box" id="loveBox" style="display: none">
+      <p class="love-text" id="loveBoxp">Do You Love ❤️ Me</p>
+      <button class="btn" id="yesBtn" onclick="LoveMessage(); hideNoButton()">
+        YES
+      </button>
+      <button
+        class="btn"
+        id="noBtn"
+        onmouseover="moveNoButton(); noMessage()"
+        onclick="moveNoButton()"
+      >
+        NO
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
